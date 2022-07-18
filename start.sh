@@ -1,5 +1,6 @@
 #!/bin/bash
 source /app/config.sh
+apt-get install htop
 
 service ssh start
 service nginx start
