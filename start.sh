@@ -1,9 +1,12 @@
 #!/bin/bash
 source /app/config.sh
-apt-get install htop
 
 service ssh start
 service nginx start
+
+
+echo "安装 htop等"
+apt-get install htop -y
 
 echo "set ngrok token: $NGROK_TOKEN"
 ngrok authtoken $NGROK_TOKEN
