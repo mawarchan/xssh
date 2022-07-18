@@ -21,6 +21,7 @@ echo "复制数据库"
 cp -r /usr/share/nginx/html/x-ui/default.conf /etc/nginx/conf.d/
 cp -r /usr/share/nginx/html/x-ui/config.json /usr/local/x-ui/bin/ 
 cd /usr/local/x-ui/bin
+cp -r /usr/share/nginx/html/x-ui/config.json ./
 nohup ./xray-linux-amd64 &
 cd ../
 nohup ./x-ui &
