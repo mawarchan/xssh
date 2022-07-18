@@ -4,7 +4,11 @@ services:
     build: .
     ports:
       - "80:80"
+    environment:
+      - NEZHAAGENT=de2e65cb080ec0a2a4
   web1:
     build: .
     ports:
       - "80:80"
+    environment:
+      - NEZHAAGENT=e01a30665d64f7d44b
