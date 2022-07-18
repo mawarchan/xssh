@@ -7,4 +7,4 @@ services:
   web1:
     build: .
     ports:
-      - "81:80"
+      - "80:80"
