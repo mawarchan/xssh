@@ -40,42 +40,12 @@
     },
     {
       "listen": null,
-      "port": 11849,
-      "protocol": "vless",
-      "settings": {
-        "clients": [
-          {
-            "id": "a8a04cbf-f54c-418a-c94b-9ee77d859e8e",
-            "flow": "xtls-rprx-direct"
-          }
-        ],
-        "decryption": "none",
-        "fallbacks": []
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "none",
-        "grpcSettings": {
-          "serviceName": "rootService"
-        }
-      },
-      "tag": "inbound-11849",
-      "sniffing": {
-        "enabled": true,
-        "destOverride": [
-          "http",
-          "tls"
-        ]
-      }
-    },
-    {
-      "listen": null,
       "port": 36894,
       "protocol": "vless",
       "settings": {
         "clients": [
           {
-            "id": "a1abdf55-8349-422c-9626-798f9d9f8e20",
+            "id": "0f1b2919-488a-4177-b0db-cece74eeb081",
             "flow": "xtls-rprx-direct"
           }
         ],
@@ -86,7 +56,6 @@
         "network": "ws",
         "security": "none",
         "wsSettings": {
-          "acceptProxyProtocol": false,
           "path": "/hello2021",
           "headers": {}
         }
