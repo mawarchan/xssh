@@ -1,12 +1,12 @@
 version: "3.9"  # optional since v1.27.0
 services:
-  web:
+  web1:
     build: .
     ports:
       - "80:80"
     environment:
       - NEZHAAGENT=de2e65cb080ec0a2a4
-  web1:
+  web2:
     build: .
     ports:
       - "81:80"
