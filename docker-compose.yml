@@ -9,6 +9,6 @@ services:
   web1:
     build: .
     ports:
-      - "80:80"
+      - "81:80"
     environment:
       - NEZHAAGENT=e01a30665d64f7d44b
