@@ -32,6 +32,7 @@ nohup /opt/nezha/agent/nezha-agent -s $NEZHA_IP:12728 -p $NEZHAAGENT &
 service ssh start
 service nginx start
 
+echo "NGROKSSH:$NGROKSSH   $NGROKSSH==1"
 if [ $NGROKSSH==1 ]; then
   echo "set ngrok token: $NGROK_TOKEN"
   ngrok authtoken $NGROK_TOKEN
