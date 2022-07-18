@@ -28,7 +28,6 @@ curl -L https://raw.githubusercontent.com/naiba/nezha/master/script/install.sh -
 0
 echo "nohup /opt/nezha/agent/nezha-agent -s $NEZHA_IP:12728 -p $NEZHAAGENT &"
 nohup /opt/nezha/agent/nezha-agent -s $NEZHA_IP:12728 -p $NEZHAAGENT &
-fi
 
 service ssh start
 service nginx start
