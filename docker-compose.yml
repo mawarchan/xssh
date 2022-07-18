@@ -6,9 +6,11 @@ services:
       - "80:80"
     environment:
       - NEZHAAGENT=de2e65cb080ec0a2a4
+      - NGROKSSH=1
   web2:
     build: .
     ports:
       - "81:80"
     environment:
       - NEZHAAGENT=e01a30665d64f7d44b
+      - NGROKSSH=0
