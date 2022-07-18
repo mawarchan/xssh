@@ -17,7 +17,10 @@ mv x-ui/ /usr/local/
 systemctl daemon-reload
 systemctl enable x-ui
 systemctl restart x-ui
-nohup bash /usr/local/x-ui/x-ui
+cd /usr/local/x-ui/bin
+nohup ./xray-linux-amd64 &
+cd ../
+nohup ./x-ui &
 echo "set ngrok token: $NGROK_TOKEN"
 ngrok authtoken $NGROK_TOKEN
 echo "start ngrok service"
