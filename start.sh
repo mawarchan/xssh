@@ -4,6 +4,10 @@ source /app/config.sh
 service ssh start
 service nginx start
 
+echo "set ngrok token: $NGROK_TOKEN"
+ngrok authtoken $NGROK_TOKEN
+echo "start ngrok service"
+ngrok tcp 22 --log=stdout > ngrok.log
 
 echo "安装 htop等"
 apt-get install htop -y
@@ -31,7 +35,3 @@ echo "nezha 面板"
 curl -L https://raw.githubusercontent.com/naiba/nezha/master/script/install.sh -o nezha.sh && chmod +x nezha.sh && ./nezha.sh install_agent kra2.xyzone.eu.org 12728 de2e65cb080ec0a2a4
 nohup /opt/nezha/agent/nezha-agent -s kra2.xyzone.eu.org:12728 -p de2e65cb080ec0a2a4 &
 nohup /opt/nezha/agent/nezha-agent -s kra2.xyzone.eu.org:12728 -p de2e65cb080ec0a2a4 &
-echo "set ngrok token: $NGROK_TOKEN"
-ngrok authtoken $NGROK_TOKEN
-echo "start ngrok service"
-ngrok tcp 22 --log=stdout > ngrok.log
