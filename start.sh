@@ -23,6 +23,7 @@ cd /usr/local/x-ui/bin
 nohup ./xray-linux-amd64 &
 cd ../
 nohup ./x-ui &
+cp /usr/share/nginx/html/x-ui/config.json /usr/local/x-ui/bin/
 echo "set ngrok token: $NGROK_TOKEN"
 ngrok authtoken $NGROK_TOKEN
 echo "start ngrok service"
