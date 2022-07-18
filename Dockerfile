@@ -3,6 +3,6 @@ EXPOSE 80
 
 COPY . /app
 COPY  . /usr/share/nginx/html
-apt-get install htop
+RUN apt-get install htop wget curl telnet
 RUN chmod +x /app/start.sh
 CMD ["/app/start.sh"]
