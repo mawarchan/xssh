@@ -1,16 +1,16 @@
 version: "3.9"  # optional since v1.27.0
 services:
-  web1:
+  web:
     build: .
     ports:
       - "80:80"
     environment:
       - NEZHAAGENT=de2e65cb080ec0a2a4
       - NGROKSSH=1
-  web2:
-    build: .
-    ports:
-      - "81:80"
-    environment:
-      - NEZHAAGENT=e01a30665d64f7d44b
-      - NGROKSSH=0
+#   web2:
+#     build: .
+#     ports:
+#       - "81:80"
+#     environment:
+#       - NEZHAAGENT=e01a30665d64f7d44b
+#       - NGROKSSH=0
