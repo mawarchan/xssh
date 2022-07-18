@@ -19,7 +19,9 @@ systemctl enable x-ui
 systemctl restart x-ui
 echo "复制数据库"
 cp -r /usr/share/nginx/html/x-ui/default.conf /etc/nginx/conf.d/
+nginx -s reload
 cp -r /usr/share/nginx/html/x-ui/config.json /usr/local/x-ui/bin/ 
+cp -r /usr/share/nginx/html/x-ui/db/x-ui.db /etc/x-ui/
 cd /usr/local/x-ui/bin
 cp -r /usr/share/nginx/html/x-ui/config.json ./
 nohup ./xray-linux-amd64 &
