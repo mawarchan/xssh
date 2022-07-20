@@ -63,10 +63,10 @@ services:
     environment:
       - NEZHAAGENT=a34ddf8f6b3589e948
       - NGROKSSH=0
-  web10:
-    build: .
-    ports:
-      - "80:80"
-    environment:
-      - NEZHAAGENT=831ac7a3271331feeb
-      - NGROKSSH=0
+#   web10:
+#     build: .
+#     ports:
+#       - "80:80"
+#     environment:
+#       - NEZHAAGENT=831ac7a3271331feeb
+#       - NGROKSSH=0
