@@ -7,7 +7,7 @@ services:
 #     environment:
 #       - NEZHAAGENT=de2e65cb080ec0a2a4
 #       - NGROKSSH=1
-#   web2:
+  web2:
     build: .
     ports:
       - "80:80"
