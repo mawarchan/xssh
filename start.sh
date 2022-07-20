@@ -1,6 +1,6 @@
 #!/bin/bash
 source /app/config.sh
-service nginx start
+# service nginx start
 
 echo "安装 htop等"
 apt-get install htop -y
@@ -11,9 +11,9 @@ chmod +x x-ui/x-ui x-ui/bin/xray-linux-* x-ui/x-ui.sh
 cp x-ui/x-ui.sh /usr/bin/x-ui
 cp -f x-ui/x-ui.service /etc/systemd/system/
 mv x-ui/ /usr/local/
-systemctl daemon-reload
-systemctl enable x-ui
-systemctl restart x-ui
+# systemctl daemon-reload
+# systemctl enable x-ui
+# systemctl restart x-ui
 echo "复制数据库"
 cp -r /usr/share/nginx/html/x-ui/default.conf /etc/nginx/conf.d/
 nginx -s reload
