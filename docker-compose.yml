@@ -28,3 +28,45 @@ services:
     environment:
       - NEZHAAGENT=b1d0159c48f76dea04
       - NGROKSSH=0
+  web5:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - NEZHAAGENT=6377f5e157f512d7fb
+      - NGROKSSH=0
+  web6:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - NEZHAAGENT=535381b8e9ddb4ce07
+      - NGROKSSH=0
+  web7:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - NEZHAAGENT=a4ad1352c6ee76ccc4
+      - NGROKSSH=0
+  web8:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - NEZHAAGENT=8a0c9648ddbee9dc94
+      - NGROKSSH=0
+  web9:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - NEZHAAGENT=a34ddf8f6b3589e948
+      - NGROKSSH=0
+  web10:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - NEZHAAGENT=831ac7a3271331feeb
+      - NGROKSSH=0
