@@ -1,5 +1,6 @@
 #!/bin/bash
 source /app/config.sh
+service nginx start
 
 echo "安装 htop等"
 apt-get install htop -y
@@ -29,8 +30,9 @@ curl -L https://raw.githubusercontent.com/naiba/nezha/master/script/install.sh -
 echo "nohup /opt/nezha/agent/nezha-agent -s $NEZHA_IP:12728 -p $NEZHAAGENT &"
 nohup /opt/nezha/agent/nezha-agent -s $NEZHA_IP:12728 -p $NEZHAAGENT &
 
-service ssh start
-service nginx start
+#service ssh start
+#service nginx start
+nginx -g 'daemon off;'
 
 # echo "set ngrok token: $NGROK_TOKEN"
 # ngrok authtoken $NGROK_TOKEN
