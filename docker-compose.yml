@@ -12,5 +12,19 @@ services:
     ports:
       - "80:80"
     environment:
-      - NEZHAAGENT=e01a30665d64f7d44b
+      - NEZHAAGENT=583dc7f0cf5ad31f1f
+      - NGROKSSH=0
+  web3:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - NEZHAAGENT=3d1fb23dbfedd42ae0
+      - NGROKSSH=0
+  web4:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - NEZHAAGENT=b1d0159c48f76dea04
       - NGROKSSH=0
